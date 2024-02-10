@@ -1,0 +1,10 @@
+-- with customer as (
+--     select customerid as customer_id,
+--            companyname as company_name,
+--            contactname as contact_name,
+--            contacttittle as contact_tittle,
+--            city,
+--            country
+--     from Northwind.public.customers
+-- )
+-- select * from customer
