@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: src_postgres
+    schema: public
+    database: Northwind
+
+    tables:
+      - name: customers
+      - name: orders
+      - name: order_details
+      - name: categories
+      - name: products
+      - name: shippers

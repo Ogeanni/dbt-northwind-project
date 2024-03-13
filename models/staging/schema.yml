@@ -1,0 +1,40 @@
+
+version: 2
+
+models:
+  - name: stg_customers
+    description: "A customer table"
+    columns:
+      - name: customer_id
+        description: "The primary key for the customer table"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_orders
+    description: "The order table"
+    columns:
+      - name: order_id
+        description: "The primary key for the order table"
+        tests:
+          - unique
+          - not_null
+
+
+  - name: stg_orders_details
+    description: "The order details table"
+    columns:
+      - name: order_id
+        description: "The primary key for the order details table"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_product
+    description: "The product table"
+    columns:
+      - name: product_id
+        description: "The primary key for the product table"
+        tests:
+          - unique
+          - not_null
